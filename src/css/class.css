@@ -1,0 +1,68 @@
+:root {
+    --light-green: #3baea0;
+    --green: #118a7e;
+    --dark-green: #1f6f78;
+  }
+  
+  body {
+    font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+    background: radial-gradient(
+      circle at 10% 20%,
+      rgb(116, 203, 199) 0%,
+      rgb(220, 246, 200) 90%
+    );
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  section {
+    margin: 120px 0;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 48px;
+    margin: 0;
+  }
+  
+  h1 {
+    color: var(--light-green);
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #0d6d63;
+    padding: 0 0 24px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: PT Mono, monospace;
+    text-align: center;
+  }
+  
+  button {
+    border-radius: 25px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(222, 253, 246);
+    border: 1px solid var(--green);
+    color: var(--green);
+    font-size: 16px;
+    line-height: 22px;
+    padding: 16px 24px;
+    text-decoration: none;
+    transition: all 200ms ease;
+  }
+  
+  button:hover {
+    color: #fff;
+    background: var(--light-green);
+  }
+  
