@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Yogurt</title>
+  </head>
+  <link rel="stylesheet" href="src/css/yogurt.css" />
+  <body>
+    <h1>I love Yogurt</h1>
+    <h2>Expecially Greek Yogurts</h2>
+    <hr />
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhomHm0BIlEn4TfBbRJYgzjy-HN8tHtiVJY_n9onpNKAdj3mtog"
+      alt=""
+    />
+    <hr />
+    <p>
+      <strong>Greek yogurt</strong> is a yogurt that has been strained to remove
+      most of its whey, resulting in a thicker consistency than unstrained
+      yogurt, while preserving yogurt's distinctive sour taste. Like many types
+      of yogurt, strained yogurt is often made from milk that has been enriched
+      by boiling off some of its water content, or by adding extra butterfat and
+      powdered milk. In Europe and North America, it is often made with low-fat
+      or fat-free yogurt. In Iceland a similar product named <em>skyr</em> is
+      produced.
+    </p>
+    <small
+      ><a href="https://en.wikipedia.org/wiki/Strained_yogurt" target="_blank"
+        >Read on Wikipedia</a
+      ></small
+    >
+    <br />
+    <button class="btn">Try Greek Yogurt</button>
+
+    <script>
+      document.querySelector(".btn").addEventListener("click", function () {
+        let name = prompt("What is your name?");
+        if (name.length) {
+          alert(
+            "Thanks, " +
+              name +
+              " , we will be in touch. Meanwhile, have a lot of Yogurt!"
+          );
+        } else {
+          alert("No name, no Greek Yogurt for you!");
+        }
+      });
+    </script>
+  </body>
+</html>
