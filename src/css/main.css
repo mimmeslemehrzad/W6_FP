@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #6874cf;
+    --secondary-color: #f5f2fe;
+    --hovering-color: #858fd6;
+    --contect-color: #858fd6;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  body {
+    color: var(--contect-color);
+    margin-top: 100px;
+    background: linear-gradient(
+      359.3deg,
+      rgb(196, 214, 252) 1%,
+      rgba(187, 187, 187, 0) 70.9%
+    );
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 96px;
+  }
+  
+  h2 {
+    font-size: 48px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    opacity: 0.7;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .navigation-links {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+  .navigation-links a {
+    margin: 20px;
+  }
+  
+  .primary-link {
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: whitesmoke;
+  }
+  
+  .secondary-link {
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--hovering-color);
+    border: 1px solid var(--hovering-color);
+  }
+  
+  .primary-link:hover {
+    background-color: var(--hovering-color);
+    color: whitesmoke;
+  }
+  
+  .secondary-link:hover {
+    background: var(--hovering-color);
+    color: var(--secondary-color);
+  }
+  
+  .homepage-link {
+    color: var(--primary-color);
+    text-align: center;
+    display: block;
+  }
+  
+  .about-paragraphs {
+    margin: 30px 0;
+  }
+  
+  .about-paragraphs p {
+    margin: 10px;
+  }
+  
+  .email-link {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  
+  .img-fluid.rounded {
+    height: 300px;
+    width: 450px;
+  }
+  
+  .space {
+    margin-top: 100px;
+  }
+  
+  .nav-link {
+    color: whitesmoke !important;
+  }
+  
+  .nav-link:hover {
+    color: #363a57 !important;
+  }
+  
+  .navbar-brand {
+    color: #292c42 !important;
+  }
+  
+  .navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+    background-color: var(--primary-color) !important;
+  }
+  
