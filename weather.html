@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SheCodes</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/css/weather.css" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <div class="container  d-flex">
+    <div class="weather-app">
+      <form id="search-form" class="mb-3">
+        <div class="row">
+          <div class="col-8">
+            <input type="search" placeholder="Search for a city ..." class="form-control  sm-2" id="city-input"
+              autocomplete="off" />
+          </div>
+          <div class="col-2">
+            <input type="submit" value="Search 🔍" class="btn btn-primary w-10" id="search" />
+          </div>
+          <div class="col-2">
+            <button class="btn btn-primary w-10" id="current-location">
+              Current 📍
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="overview">
+        <h1 id="city"></h1>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix weather-temperature">
+            <img src="" alt="Clear" id="icon" class="float-left" />
+            <div class="float-left">
+              <strong id="temperature"></strong><span class="units">
+                <a href="#" id="celsius-link">°C</a>
+                |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 details">
+          <ul>
+            <li class="humidity">
+              <i class="fas fa-tint"></i>
+              &nbsp; Humidity:
+              <span id="humidity"></span>
+            </li>
+            <li class="wind">
+              <i class="fas fa-wind"></i>
+              &nbsp; Wind:
+              <span id="wind"></span> m/h
+            </li>
+            <li class="pressure">
+              <i class="fas fa-tachometer-alt"></i>
+              &nbsp; Pressure:
+              <span id="pressure"></span> in
+            </li>
+            <li class="feels">
+              <i class="fas fa-thermometer-three-quarters"></i>
+              &nbsp; Feels:
+              <span id="feels"></span> °
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="forecast">
+        <p>
+          <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+          &nbsp;Check the weather for next few days &nbsp;
+          <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+        </p>
+        <hr />
+        <div class="weather-forecast" id="forecast"></div>
+      </div>
+      <br />
+      <p>Last updated: <span id="date"></span></p>
+      <small class="center">
+        This project was coded by by Mehrzad Tareh and is
+        <a href="https://github.com/mimmeslemehrzad/Workshop8" target="_blank">Open-source code
+          <i class="fab fa-github"></i>
+        </a>
+      </small>
+    </div>
+
+  </div>
+
+  <script src="src/js/index.js"></script>
+</body>
+
+</html>
